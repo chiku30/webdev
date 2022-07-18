@@ -1,0 +1,34 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.my-class {
+    color: blueviolet;
+}
+
+/* id selector */
+#my-id {
+    color: brown;
+}
+
+/* Best usage of space 
+- padding
+- margin
+- border
+- outline
+- height
+- width
+*/
+
+/* in order to change the entire elements of the page:
+    * {
+        color: ...
+    }
+ */
