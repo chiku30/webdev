@@ -1,134 +1,100 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
+<<<<<<< HEAD <!DOCTYPE html>
+    <html>
 
-<body style="background-color:rgb(255, 250, 160);">
-    <main>
-        <section>
-            <!-- * headers and paragraphs * -->
-            <h1 style="color:rgb(150,176,253)"> Code Elevate Project</h1>
-            <h2></h2> Oakton Community College </h2>
-            <!-- <h2 style="color:darkgoldenrod"><a target = "_blank" href = "https://www.oakton.edu"> Oakton Community College </a></h2> -->
-            <p><em> Hello World! this is my first individual website! </em> </p>
-        </section>
+    <body style="background-color:rgb(255, 250, 160);">
+        <main>
+            <link href="styles/styles.css" rel="stylesheet">
+            <section>
+                <!-- * headers and paragraphs * -->
+                <h1 style="color:rgb(150,176,253)"> Code Elevate Project</h1>
+                <h3> Oakton Community College </h3>
+                <!-- <h2 style="color:darkgoldenrod"><a target = "_blank" href = "https://www.oakton.edu"> Oakton Community College </a></h2> -->
+                <p id="my-id"><em> Hello World! this is my first individual website! </em> </p>
+                <!-- CSS reads from top to bottom. so it will read the latest style change. If there is a line of code in CSS that comes BEFORE a line of code in html, the html will take precedent over the CSS -->
+            </section>
 
-        <section>
-            <!-- * lists * -->
-            <h3> Best Worst TV Shows!</h3>
-            <!-- TODO: Look for more terrible Tv Shows :) -->
-            <!-- bullet point lists -->
-            <ul>
-                <li> Riverdale</li>
-                <li> FATE: THE WINX SAGA
-            </ul>
+            <section>
+                <!-- * lists * -->
+                <h3> Best Worst TV Shows!</h3>
+                <!-- TODO: Look for more terrible Tv Shows :) -->
+                <!-- bullet point lists -->
+                <ul class="my-class">
+                    <li> Riverdale</li>
+                    <li> FATE: THE WINX SAGA
+                </ul>
 
-            <h3> Favorite Foods</h3>
-            <!-- This gives a numbered list = orderd list -->
-            <ol>
-                <li> Efo </li>
-                <li> Gummy Worms </li>
-                <li> Pizza </li>
-            </ol>
-        </section>
+                <h3> Favorite Foods</h3>
+                <!-- This gives a numbered list = orderd list -->
+                <ol class="my-class">
+                    <li> Efo </li>
+                    <li> Gummy Worms </li>
+                    <li> Pizza </li>
+                </ol>
+            </section>
 
-        <section>
-            <!-- * links * -->
-            <!-- attribute tag using href for link -->
-            <a href="https://www.google.com"> Link to Google</a>
+            <section>
+                <!-- * links * -->
+                <!-- attribute tag using href for link -->
+                <a class="my-class" href="https://www.google.com"> Link to Google</a>
 
-            <h2> </h2>
+                <h2> </h2>
 
-            <!-- abosolute URL: pulls image from the internet-->
-            <!-- <img src="https://ntvb.tmsimg.com/assets/p20001974_b_h8_aa.jpg?w=1280&h=720"> -->
+                <!-- abosolute URL: pulls image from the internet-->
+                <!-- <img src="https://ntvb.tmsimg.com/assets/p20001974_b_h8_aa.jpg?w=1280&h=720"> -->
 
-            <!-- Relative URL pulls image from local computer -->
-            <!--<img src="abbott elementary.jpg" width="450" height="275"> -->
+                <!-- Relative URL pulls image from local computer -->
+                <!--<img src="abbott elementary.jpg" width="450" height="275"> -->
 
-            <!-- Creates a link that changes the former website to another website -->
-            <p> Click here to view <a href="https://www.google.com"> more content </a> </p>
+                <!-- Creates a link that changes the former website to another website -->
+                <p> Click here to view <a href="https://www.google.com"> more content </a> </p>
 
-            <!-- Creates a link that opens an entirely new tab -->
-            <p> Click here to view <a target="_blank" href="https://www.google.com"> more content </a> </p>
+                <!-- Creates a link that opens an entirely new tab -->
+                <p> Click here to view <a target="_blank" href="https://www.google.com"> more content </a> </p>
 
-            <figure>
-                <a href="https://www.google.com" target="_blank"> <img src="abbott elementary.jpg" width="450"
-                        height="275" alt="Abbot elementary"></a>
-                <figcaption><strong> Abbot Elementary </strong></figcaption>
-            </figure>
-        </section>
+                <figure>
+                    <a href="https://www.google.com" target="_blank"> <img src="pictures/abbott elementary.jpg"
+                            width="450" height="275" alt="Abbot elementary"></a>
+                    <figcaption><strong> Abbot Elementary </strong></figcaption>
+                </figure>
+            </section>
 
-        <section>
-            <form action="https://www.google.com/">
-                <fieldset>
-                    <legend> Who is your favorite character? </legend>
-                    <label><input id="barbara howard" type="radio" name="favorite character" value="barbara howard"
-                            check="">Barbara Howard </label>
-                    <label><input id="ava coleman" type="radio" name="favorite character" value="ava coleman"
-                            check="">Ava Coleman </label>
-                </fieldset>
+            <section>
+                <form action="https://www.google.com/">
+                    <fieldset>
+                        <!-- Radio form -->
+                        <legend> Who is your favorite character? </legend>
+                        <label><input id="barbara howard" type="radio" name="favorite character" value="barbara howard"
+                                check="">Barbara Howard </label>
+                        <label><input id="ava coleman" type="radio" name="favorite character" value="ava coleman"
+                                check="">Ava Coleman </label>
+                    </fieldset>
 
-                <fieldset>
-                    <legend> What's Your Favorite Season? </legend>
-                    <input id="one" type="checkbox" name="favorite season" value="one"> Season 1</label>
-                    <input id="i want more seasons" type="checkbox" name="favorite season" value="i want more seaons"> I
-                    WANT more seasons</label>
-                    <input id="i need more seasons" type="checkbox" name="favorite season" value="i need more seaons"> I
-                    NEED more seasons</label>
+                    <fieldset>
+                        <!-- Checkbox form -->
+                        <legend> What's Your Favorite Season? </legend>
+                        <input id="one" type="checkbox" name="favorite season" value="one"> Season 1</label>
+                        <input id="i want more seasons" type="checkbox" name="favorite season"
+                            value="i want more seaons"> I
+                        WANT more seasons</label>
+                        <input id="i need more seasons" type="checkbox" name="favorite season"
+                            value="i need more seaons"> I
+                        NEED more seasons</label>
 
-                </fieldset>
+                    </fieldset>
+                    <!-- Textbox form -->
+                    <input type="text" neame="abbot-elementary-songs" placeholder="enter abbott elementary song"
+                        required="">
+                    <button type="submit"> Submit</button>
 
-                <input type="text" neame="abbot-elementary-songs" placeholder="enter abbott elementary song"
-                    required="">
-                <button type="submit"> Submit</button>
+                </form>
 
-            </form>
+            </section>
 
-        </section>
+        </main>
 
-    </main>
+        <footer>
+            <p> <em> No Copyright Code Elevate </em> </p>
+        </footer>
+    </body>
 
-    <footer>
-        <p> <em> No Copyright Code Elevate </em> </p>
-    </footer>
-</body>
-
-=======
-<!DOCTYPE html>
-<html>
-
-<body style="background-color:rgb(255, 250, 160);"> 
-    <h1 style="color:rgb(150,176,253)"> Code Elevate Project</h1>
-    <h2> Oakton Community College </h2>
-    <p> Hello World! this is my first individual website!</p>
-
-    <h3> Best Worst TV Shows!</h3>
-    <!-- TODO: Look for more terrible Tv Shows :) -->
-    <ul>
-        <li> Riverdale</li>
-        <li> FATE: THE WINX SAGA
-    </ul>
-
-    <h3> Favorite Foods</h3>
-    <!-- This gives a numbered list = orderd list-->
-    <ol>
-        <li> Efo </li>
-        <li> Gummy Worms </li>
-        <li> Pizza </li>
-    </ol>
-
-    <!-- attribute tag using href for link -->
-    <a href="https://www.google.com"> Link to Google</a>
-
-    <h2> </h2>
-
-    <!-- abosolute URL-->
-    <!-- <img src="https://ntvb.tmsimg.com/assets/p20001974_b_h8_aa.jpg?w=1280&h=720">
-    
-        <!- Relative URL -->
-    <img src = "abbott elementary.jpg" width ="450" height = "275">
-
-
-</body>
-
->>>>>>> fec0c6c3c7720c233e3e5975ff21de0dea265824
-</html>
+    </html>
