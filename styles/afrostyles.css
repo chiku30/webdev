@@ -7,11 +7,66 @@ background-image: url("https://esvedrawellness.com/wp-content/uploads/2021/07/IM
 
 */
 body {
-background-color: #d9ceca;
+    background-color: #d9ceca;
 }
 
 
 main {
-    color: #12263A;
+    color: #BA5A31
+}
+
+#title {
+    font-size: 600%;
+    line-height: .05;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 15%;
 
 }
+
+#button {
+    background-color: transparent;
+    color: #BA5A31;
+    border: none;
+    font-size: 125%;
+    text-align: center;
+    padding: 15px 30px;
+    transition-duration: .4s;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    overflow: none;
+    outline: none;
+
+}
+
+
+
+#button:hover {
+
+    /* background: #251101; */
+    
+    
+    background-image: url("https://t4.ftcdn.net/jpg/04/60/11/67/360_F_460116710_Xyb3P4eDZXoGfFUFDslhJHZC8IoM46ob.jpg");
+    background position: 0 1.05em;
+    background size: 28px 9px;
+    text-decoration: solid;
+    color: #BA5A31;
+    transform: translate(0, -3px);
+    box-shadow: #140901;
+
+
+}
+
+
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+background: #251101;
+color:#BA5A31;
+*/
