@@ -16,7 +16,7 @@ main {
 }
 
 #title {
-    font-size: 600%;
+    font-size: 800%;
     line-height: .05;
     letter-spacing: 3px;
     text-align: center;
@@ -26,7 +26,7 @@ main {
 
 #button {
     background-color: transparent;
-    color: #BA5A31;
+    color: #704523;
     border: none;
     font-size: 125%;
     text-align: center;
@@ -43,17 +43,24 @@ main {
 
 #button:hover {
 
-    /* background: #251101; */
-    
-    
+    color: #BA5A31;
+    text-decoration: none;
     background-image: url("https://t4.ftcdn.net/jpg/04/60/11/67/360_F_460116710_Xyb3P4eDZXoGfFUFDslhJHZC8IoM46ob.jpg");
-    background position: 0 1.05em;
-    background size: 28px 9px;
+    background-size: 100% 5px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s linear;
+    box-shadow: #140901;
+    transform: translate(0, -3px);
+    font-size: 150%;
+
+    /* background: #251101; 
+    background-image: url("https://t4.ftcdn.net/jpg/04/60/11/67/360_F_460116710_Xyb3P4eDZXoGfFUFDslhJHZC8IoM46ob.jpg");
     text-decoration: solid;
     color: #BA5A31;
     transform: translate(0, -3px);
     box-shadow: #140901;
-
+    */
 
 }
 

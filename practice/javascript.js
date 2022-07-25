@@ -3,7 +3,7 @@
 This is a multi-line comment
 */
 var myName;
-myName = Chiku;
+myName = "Chiku";
 
 var a;
 a = 47
@@ -67,18 +67,220 @@ newVar = newVar - 1;
 //same as...
 newVar--;
 
- let v = 1;
- v += 5;
- console.log("this is v" + v);
+let v = 1;
+v += 5;
+console.log("this is v" + v);
 
- let s = 10;
- s -= 5;
- console.log("this is s" + s);
+let s = 10;
+s -= 5;
+console.log("this is s" + s);
 
- let m = 5;
- s *= 2;
- console.log("this is m" + m);
+let m = 5;
+s *= 2;
+console.log("this is m" + m);
 
- let d = 10;
- s /= 2;
- console.log("this is d" + d);
+let d = 10;
+s /= 2;
+console.log("this is d" + d);
+
+//n == 22
+var n = 23;
+
+/* if (n == 22) {
+    console.log("this number is 22");
+}
+console.log("this number is not 22");
+*/
+
+/* if (n == 22) {
+    console.log("this number is 22");
+} else {
+    console.log("this number is not 22");
+}
+*/
+
+if (n == 22) {
+    console.log("this number is 22");
+} else if (n == 23) {
+    console.log("this number is 23");
+} else {
+    console.log("this number is neither 22 or 23");
+}
+
+/*
+// AND conditional
+if (n == 22 && n == 23) {
+    console.log("n is 22 or 23");
+} else {
+    console.log("n is neither 22 or 23");
+}
+*/
+
+/*
+// OR considitonal
+
+if (n == 22 || n == 23) {
+    console.log("n is 22 or 23");
+} else {
+    console.log("n is neither 22 or 23");
+}
+*/
+
+var number = "47";
+
+if (number == 47) {
+    console.log("checked: this number is 47");
+} else {
+    console.log("checked: this number isn't 47");
+}
+
+// +=, -=, *=, /=
+
+number++;
+number--;
+
+//concentration of strings
+console.log("number = " + number);
+console.log("number is" + number + ". This number is prime");
+
+// >= , <=
+
+var numCheck = 20;
+if (numCheck <= 20) {
+    console.log("num is less than or equal to 10");
+} else if (number >= 11) {
+    console.log("num is greater than or equal to 11");
+} else {
+    console.log("this is not a number");
+}
+
+const PET = "dog";
+
+//these lines of codes are very repetitive
+if (PET === "lizard") {
+    console.log("I own a lizard");
+} else if (PET === "dog") {
+    console.log("I own a dog");
+} else if (PET === "cat") {
+    console.log("I own a cat");
+} else if (PET === "snake") {
+    console.log("I own a snake");
+} else if (PET === "parrot") {
+    console.log("I own a parrot");
+} else if (PET === "bunny") {
+    console.log("I own a bunny");
+} else if (PET === "fish") {
+    console.log("I own a fish");
+}
+
+// make a list less repetitive
+switch (PET) {
+    case "lizard":
+        console.log("I own a lizard");
+        break;
+    case "dog":
+        console.log("I own a dog");
+        break;
+    case "cat":
+        console.log("I own a cat");
+        break;
+    case "snake":
+        console.log("I own a snake");
+        break;
+    case "bunny":
+        console.log("I own a bunny");
+        break;
+    case "fish":
+        console.log("I own a fish");
+        break;
+    default:
+        console.log("I don't own a pet")
+}
+const COUNTRY = "United States";
+switch (COUNTRY) {
+    case "France":
+    case "Spain":
+    case "Ireland":
+    case "Portugal":
+        console.log("This country is in Europe");
+        break;
+    case "United States":
+        defualt:
+        console.log("This country is not in Europe");
+        break;
+}
+
+const ERRAND = "Going shopping";
+switch (ERRAND) {
+    case "Going to the Dentist": {
+        let message = "I hate going to the dentist";
+        console.log(message);
+        break;
+    }
+    case "Going shopping": {
+        let message = "I love to shop!";
+        console.log(message);
+        break;
+    }
+    case "Chores": {
+        let message = "I hate doing chores";
+        console.log(message);
+        break;
+    }
+    default:
+        let message = "No errands";
+        console.log(message);
+        break;
+}
+
+// structure of a function
+
+function myFunction() {
+    // whatever
+    // console.log(ERRAND);
+    // alert("I am an alert box!")
+    /* var txt;
+    if (confirm("Press a button")) {
+        txt = "You pressed ok!";
+    } else {
+        txt = "You pressed cancel!"
+    }
+    document.getElementById("demo").innerHTML = txt;
+    */
+
+    let text;
+    let person = prompt("Please enter your name:");
+    if (person == null || person == " ") {
+        text = "User cancle the prompt";
+    } else {
+        text = "Hello" + " " + person + "! How are you today?";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+}
+
+/*
+var i = 0;
+console.log("Starting Loop");
+while (i < 10) {
+    console.log("this number is " + i);
+    i++;
+}
+console.log("End of Loop");
+*/
+
+/*
+var i = 10;
+console.log("Starting Loop")
+do {
+    console.log("the number is " + i);
+    i--
+} while (i > 0)
+*/
+
+var count;
+console.log("Starting loop");
+for(count = 0; count < 10; count++) {
+    console.log("current count: " + count);
+}
+console.log("Loop stopped");
