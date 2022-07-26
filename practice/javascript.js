@@ -284,3 +284,27 @@ for(count = 0; count < 10; count++) {
     console.log("current count: " + count);
 }
 console.log("Loop stopped");
+
+var fruits = ["apple", "strawberry", "pineapple", "starfruit", "mago", "peaches", "passionfruit"];
+//to specifically call strawberry
+fruits[1];
+console.log(fruits[0] + "is the first fruit");
+console.log(fruits[1] + "is the seocnd fruit");
+console.log(fruits[2] + "is the second fruit");
+console.log(fruits[3] + "is the furth fruit");
+//arrays are good for quickly retriving infor without having to sort through tons of data.
+
+var i;
+for(i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+let text = "<ul>";
+fruits.forEach(fruitfunction);
+text += "</ul>";
+document.getElementById("fruitText").innerHTML = text;
+
+//declare the fruitFunction
+function fruitfunction(value) {
+    text += "<li>" + value + "</li>";
+}

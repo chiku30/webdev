@@ -17,10 +17,11 @@ main {
 
 #title {
     font-size: 800%;
-    line-height: .05;
+    line-height: .001;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 13%;
+    font-family: perpetua;
 
 }
 
@@ -36,6 +37,8 @@ main {
     background-repeat: no-repeat;
     overflow: none;
     outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 
 }
 
@@ -64,13 +67,32 @@ main {
 
 }
 
-
-
-
 .button-group {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*
+.button-group:text {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    left: 0%;
+ }
+ */
+
+.button-group:hover .hover-enter-visit {
+    position:absolute;
+    display: inline-block;
+    bottom:35%;
+    font-size: 110%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+
+}
+.hover-enter-visit {
+    display:none;
 }
 
 /* 
