@@ -83,19 +83,51 @@ main {
  */
 
 .button-group:hover .hover-enter-visit {
-    position:absolute;
+    position: absolute;
     display: inline-block;
-    bottom:35%;
+    bottom: 35%;
     font-size: 110%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 
 }
+
 .hover-enter-visit {
-    display:none;
+    display: none;
 }
 
-/* 
+/*
+.circular-landscape img {
+    border-radius: 50%;
+
+}
+*/
+
+/*
+.ankara-3 {
+    width:20%;
+    aspect-ratio: 1/1;
+    opacity: .8;
+    position: relative;
+    %;
+}
+*/
+
+/*
+.circular-landscape img {
+        background: url(brown ankara 3.jpg) 50% 50% no-repeat;
+        width: 250px;
+        height: 250px;
+        border-radius:50%;
+}
+*/
+
+/*
+EXTRA code: 
 background: #251101;
-color:#BA5A31;
+color:#BA5A31;    
+background: url(blah.jpg) 50% 50% no-repeat; //50% 50% centers image in div     
+width:15%;
+height:25%;
+border-radius:50%;
 */
