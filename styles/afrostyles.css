@@ -6,8 +6,17 @@ background-image: url("https://esvedrawellness.com/wp-content/uploads/2021/07/IM
     background-size: cover;
 
 */
+html{
+    background-image: radial-gradient(farthest-corner at -100% 5%,
+    #4059AD 0%, #d9ceca 65%); 
+    height:100%;
+    background-repeat: no-repeat;
+}
+
 body {
-    background-color: #d9ceca;
+    /* background-color: #d9ceca; */
+
+
 
 }
 
@@ -142,7 +151,7 @@ Playing around with shrinking div width
 
 .title-pics img {
     position: absolute;
-    margin-top: -50px;
+    margin-top: -76px;
     margin-left: 20px;
     width: 4%;
     aspect-ratio: 1/1;
