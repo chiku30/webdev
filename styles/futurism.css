@@ -1,0 +1,26 @@
+html {
+    /*background: radial-gradient(circle at 100%, #e664, #FFFFF0);*/
+    background-image: radial-gradient(farthest-corner at 125% 5%,
+    #4059AD 0%, #FFFFF0 65%); 
+    height:100%;
+
+}
+
+.title-pics-f img {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    width: 4%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#title-f {
+    font-size: 600%;
+    line-height: .001;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 13%;
+    font-family: perpetua;
+    
+}

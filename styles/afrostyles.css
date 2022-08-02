@@ -21,7 +21,7 @@ main {
     line-height: .001;
     letter-spacing: 3px;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 12%;
     font-family: perpetua;
 
 }
@@ -128,7 +128,7 @@ Playing around with shrinking div width
 .button-group:hover .hover-enter-visit {
     position: absolute;
     display: inline-block;
-    bottom: 37%;
+    bottom: 39%;
     font-size: 110%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
@@ -141,9 +141,9 @@ Playing around with shrinking div width
 }
 
 .title-pics img {
-    postion: absolute;
-    margin-top: 1%;
-    margin-left: 1%;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
     width: 4%;
     aspect-ratio: 1/1;
     object-fit: cover;
