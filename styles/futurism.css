@@ -1,15 +1,16 @@
-body, header {
+body,
+header {
     /*background: radial-gradient(circle at 100%, #e664, #FFFFF0);*/
     background-image: radial-gradient(farthest-corner at 175% 5%,
-    #4059AD 0%, #FFFFF0 65%); 
-    height:100%;
+            #4059AD 0%, #FFFFF0 50%);
+    height: 100%;
     background-repeat: no-repeat;
 
 }
 
 
 .title-pics-f img {
-    position:fixed;
+    position: fixed;
     margin-top: -37px;
     margin-left: 20px;
     width: 4%;
@@ -25,5 +26,128 @@ body, header {
     padding-top: 10%;
     font-family: perpetua;
     padding-bottom: 25%;
-    
+
 }
+
+/*
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.row {
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 20px 0 20px;
+}
+
+.column {
+    
+    flex-direction: column;
+    width: 32.5%;
+    justify-content: space-between;
+
+}
+
+.column img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+
+}
+
+*/
+
+.row {
+    line height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+}
+
+.row img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 1200px) {
+    .row {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1000 px) {
+    .row {
+        -moz-column-count: 3;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    .row {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400) {
+    .row {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* CSS for FLEX, but it didin't work as intended
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+*/
+
+/* FOUR equal columns */
+/*
+ .column {
+    flex: 50%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+*/
+/* TWO equal columns */
+/*
+@media screen and(max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+*/

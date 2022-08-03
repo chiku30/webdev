@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html>
 
-<div class="bg-gradient"> 
+<div class="bg-gradient">
     <!-- this div is for background gradient-->
-<head>
-    <link href="..\styles\futurism.css" rel="stylesheet">
-    <!-- Logo button :) -->
-    <div class="title-pics-f">
-        <a href="../afrofashion.html"> <img src="../pictures/afro pick.png"></a>
-
-    </div>
-</head>
-
-<body>
-
-
-    <section>
-        <!-- <h1> Welcome!!</h1> -->
-        <h1 id="title-f"> Afrofuturism</h1>
-        <!-- <p id="ready"> Ready to Load Photos </p> -->
-
-    </section>
-
-    <section>
-        <!-- PHOTO TIME!! -->
-
-    <img src="https://i.pinimg.com/564x/28/cb/e4/28cbe4960e78b226175303beeb27950b.jpg">
-    <img src="https://i.pinimg.com/564x/ae/6b/de/ae6bde1dd79189bf05c8c13864866e4c.jpg">
-    <img src="https://i.pinimg.com/564x/d7/48/9c/d7489c171d37273b82d2541e96371c09.jpg">
-    <img src="https://i.pinimg.com/564x/f1/4a/b1/f14ab10e5c9945782735f06c9e1b018e.jpg">
-
-    <img src="https://i.pinimg.com/564x/28/cb/e4/28cbe4960e78b226175303beeb27950b.jpg">
-    <img src="https://i.pinimg.com/564x/ae/6b/de/ae6bde1dd79189bf05c8c13864866e4c.jpg">
-    <img src="https://i.pinimg.com/564x/d7/48/9c/d7489c171d37273b82d2541e96371c09.jpg">
-    <img src="https://i.pinimg.com/564x/f1/4a/b1/f14ab10e5c9945782735f06c9e1b018e.jpg">
-
-    <img src="https://i.pinimg.com/564x/28/cb/e4/28cbe4960e78b226175303beeb27950b.jpg">
-    <img src="https://i.pinimg.com/564x/ae/6b/de/ae6bde1dd79189bf05c8c13864866e4c.jpg">
-    <img src="https://i.pinimg.com/564x/d7/48/9c/d7489c171d37273b82d2541e96371c09.jpg">
-    <img src="https://i.pinimg.com/564x/f1/4a/b1/f14ab10e5c9945782735f06c9e1b018e.jpg">
-
-    </section>
-
-
     <!--#EBE9EC-->
 
 
-</body>
+    <head>
+        <link href="..\styles\futurism.css" rel="stylesheet">
+        <!-- Logo button :) -->
+        <div class="title-pics-f">
+            <a href="../afrofashion.html"> <img src="../pictures/afro pick.png"></a>
+
+        </div>
+    </head>
+
+    <body>
+
+
+        <section>
+            <!-- <h1> Welcome!!</h1> -->
+            <h1 id="title-f"> Afrofuturism</h1>
+            <!-- <p id="ready"> Ready to Load Photos </p> -->
+
+        </section>
+
+        <section>
+            <button onclick="show()" class="load"> Ready to Load? </button>
+
+        </section>
+
+        <section>
+            <!-- PHOTO TIME!! -->
+            <!-- FLEX VERSION
+            <div class="row">
+
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/ae/6b/de/ae6bde1dd79189bf05c8c13864866e4c.jpg">
+                    <img src="https://i.pinimg.com/564x/f1/4a/b1/f14ab10e5c9945782735f06c9e1b018e.jpg">
+                    <img src="https://i.pinimg.com/564x/d7/48/9c/d7489c171d37273b82d2541e96371c09.jpg">
+                    <img src="https://i.pinimg.com/564x/28/cb/e4/28cbe4960e78b226175303beeb27950b.jpg">
+                </div>
+                <div class="column">
+                    <img src="https://pbs.twimg.com/media/EDx_4GMXUAALF1-.jpg">
+                    <img src="https://i.pinimg.com/originals/a3/c3/3c/a3c33c80f45f5e04831fd940393adf52.jpg">
+                    <img src="https://i.pinimg.com/originals/7d/c7/eb/7dc7ebdfe91caca862cd3ada9ad35d2b.jpg">
+                    <img src="https://i.pinimg.com/originals/c2/a8/17/c2a81769ae3aa62f84d45b2320af5726.jpg">
+                </div>
+                <div class="column">
+
+                    <img src="https://i.pinimg.com/564x/1b/ec/a4/1beca46001bed981bcf882282f970793.jpg">
+                    <img src="https://i.pinimg.com/564x/5f/26/e2/5f26e2bfe30e8a53d13ced696cb48894.jpg">
+                    <img src="https://i.pinimg.com/564x/b9/10/81/b91081bfe174b7face90f7e405b4d48b.jpg">
+                    <img src="https://i.pinimg.com/236x/d5/af/2e/d5af2ea5fa15d87c6dace1ec61062121.jpg">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/236x/7c/f4/06/7cf406d8c1e61a64eeca5ec738401e89.jpg">
+                    <img src="https://i.pinimg.com/236x/03/24/3b/03243b7aa7308cbb7a4e12832ecab3b9.jpg">
+                    <img src="https://i.pinimg.com/236x/67/28/77/6728775f80004c1906527de18ecc42f7.jpg">
+                    <img src="https://i.pinimg.com/236x/c8/2a/7f/c82a7f7013258ac8f6df9affcfdc2a3b.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="https://i.pinimg.com/236x/15/f6/0f/15f60f7fbca5fb77cb2e1cb1d0a8f598.jpg">
+                    <img src="https://i.pinimg.com/564x/91/14/be/9114be2383d8b9ee3a03157877f0018e.jpg">
+                    <img src="https://i.pinimg.com/750x/e6/36/e2/e636e206789a37892668fefc4f52f953.jpg">
+                    <img src="https://i.pinimg.com/564x/c3/b7/4f/c3b74f4ca7a12bdb5846bff0b377eb81.jpg">
+                </div>
+
+            </div>
+            -->
+            
+            <!-- GRID Version-->
+            <div class="row">
+
+                <div class="column">
+                    <img src="https://i.pinimg.com/564x/ae/6b/de/ae6bde1dd79189bf05c8c13864866e4c.jpg">
+                    <img src="https://i.pinimg.com/564x/f1/4a/b1/f14ab10e5c9945782735f06c9e1b018e.jpg">
+                    <img src="https://i.pinimg.com/564x/d7/48/9c/d7489c171d37273b82d2541e96371c09.jpg">
+                    <img src="https://i.pinimg.com/564x/28/cb/e4/28cbe4960e78b226175303beeb27950b.jpg">
+                </div>
+                <div class="column">
+                    <img src="https://pbs.twimg.com/media/EDx_4GMXUAALF1-.jpg">
+                    <img src="https://i.pinimg.com/originals/a3/c3/3c/a3c33c80f45f5e04831fd940393adf52.jpg">
+                    <img src="https://i.pinimg.com/originals/7d/c7/eb/7dc7ebdfe91caca862cd3ada9ad35d2b.jpg">
+                    <img src="https://i.pinimg.com/originals/c2/a8/17/c2a81769ae3aa62f84d45b2320af5726.jpg">
+                </div>
+                <div class="column">
+
+                    <img src="https://i.pinimg.com/564x/1b/ec/a4/1beca46001bed981bcf882282f970793.jpg">
+                    <img src="https://i.pinimg.com/564x/5f/26/e2/5f26e2bfe30e8a53d13ced696cb48894.jpg">
+                    <img src="https://i.pinimg.com/564x/b9/10/81/b91081bfe174b7face90f7e405b4d48b.jpg">
+                    <img src="https://i.pinimg.com/236x/d5/af/2e/d5af2ea5fa15d87c6dace1ec61062121.jpg">
+                </div>
+                <div class="column">
+                    <img src="https://i.pinimg.com/236x/7c/f4/06/7cf406d8c1e61a64eeca5ec738401e89.jpg">
+                    <img src="https://i.pinimg.com/236x/03/24/3b/03243b7aa7308cbb7a4e12832ecab3b9.jpg">
+                    <img src="https://i.pinimg.com/236x/67/28/77/6728775f80004c1906527de18ecc42f7.jpg">
+                    <img src="https://i.pinimg.com/236x/c8/2a/7f/c82a7f7013258ac8f6df9affcfdc2a3b.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="https://i.pinimg.com/236x/15/f6/0f/15f60f7fbca5fb77cb2e1cb1d0a8f598.jpg">
+                    <img src="https://i.pinimg.com/564x/91/14/be/9114be2383d8b9ee3a03157877f0018e.jpg">
+                    <img src="https://i.pinimg.com/750x/e6/36/e2/e636e206789a37892668fefc4f52f953.jpg">
+                    <img src="https://i.pinimg.com/564x/c3/b7/4f/c3b74f4ca7a12bdb5846bff0b377eb81.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </body>
 
 </div>
 
